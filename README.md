@@ -6,11 +6,11 @@ a 1-wire temperature probe.
 
 __Example call__
 
-'''Python
+```python
 import tempProbe as tp
 
 p = tp.TempProbe()
 p.get_temp()
-'''
+```
 
 
