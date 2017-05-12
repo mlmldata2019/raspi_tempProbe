@@ -14,6 +14,7 @@ class TempProbe():
             os.system('modprobe w1-gpio')
             os.system('modprobe w1-therm')
             self.sn = self.find_probe()
+            print('Initializing probe ',self.sn)
         except Exception as e:
             print("Are the probes plugged in?")
             sys.exit('Shutting down')       
@@ -21,7 +22,9 @@ class TempProbe():
     def find_probe(self):
         ''' Find the mac address for the probe. Assuming it starts with 28-'''
         probes = glob.glob('/sys/bus/w1/devices/28-*')
-        if len(probes) > 1: # if more than one probe is being used
+        if len(probes):
+            pick = 0
+        elif len(probes) > 1: # if more than one probe is being used
             for i, p in enumerate(probes):
                   print(i,':',p)
             pick = int(input('Which probe? (ie 0,1...)'))
@@ -54,3 +57,6 @@ class TempProbe():
             self.tmp = temp_c
             return temp_c
 
+if __name__ == '__main__':
+    probe = TempProbe()
+    print('Temp:',probe.get_temp(),'C')
