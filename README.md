@@ -2,11 +2,11 @@
 
 Classroom activities for introduction to using electronics with a Raspberry Pi.
 
-* [Connecting to the Pi](#Connecting-to-the-Pi)
-* [Cloning the GitHub repository](#Cloning-the-GitHub-repository)
+* [Connecting to the Pi](#connecting-to-the-pi)
+* [Cloning the GitHub repository](#cloning-the-github-repository)
 * [Blinking LED](#Blinking-LED)
-* [Reading signals from analog sensors](#Reading-signals-from-analog-sensors)
-* [Temperature probe](#Temperature-probe)
+* [Reading signals from analog sensors](#reading-signals-from-analog-sensors)
+* [Temperature probe](#temperature-probe)
 
 ## Connecting to the Pi
 
@@ -58,25 +58,25 @@ This Python file contains starter code for controlling the brightness of an LED 
 To edit this file, type in the terminal:
 
 `
-idle3 led_control.py
+idle led_control.py
 `
 
 To run this file, type in the terminal:
 
 `
-python3 led_control.py
+python led_control.py
 `
 
 ## Reading signals from analog sensors
 
 Python file: [adc_simpletest.py](adc_simpletest.py)
 
-This file prints voltage convert to 10-bit values from analog sensors connected to an 8-channel MCP3008 analog to digital converter.
+This file prints 10-bit values converted from analog sensor voltages. The analog sensors are connected to an 8-channel MCP3008 analog to digital converter.
 
 To run this file, type in the terminal:
 
 `
-python3 adc_simpletest.py
+python adc_simpletest.py
 `
 
 For more information:
@@ -84,7 +84,9 @@ https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008
 
 ## Temperature probe
 
-Python file: [tempProbe.py](tempProbe.py)
+Python files: 
+* [tempProbe.py](tempProbe.py) - 1-Wire temperature probe class
+* [mug_temp.py](mug_temp.py) - starter code for recording temperature of a coffee mug
 
 ##### 1-Wire temperature probe class for Raspberry Pi
 
