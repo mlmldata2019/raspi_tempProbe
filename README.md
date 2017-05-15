@@ -2,11 +2,11 @@
 
 Classroom activities for introduction to using electronics with a Raspberry Pi.
 
-* [Connecting to the Pi](#Connecting-to-the-Pi)
-* [Cloning the GitHub repository](#Cloning-the-GitHub-repository)
+* [Connecting to the Pi](#connecting-to-the-pi)
+* [Cloning the GitHub repository](#cloning-the-github-repository)
 * [Blinking LED](#Blinking-LED)
-* [Reading signals from analog sensors](#Reading-signals-from-analog-sensors)
-* [Temperature probe](#Temperature-probe)
+* [Reading signals from analog sensors](#reading-signals-from-analog-sensors)
+* [Temperature probe](#temperature-probe)
 
 ## Connecting to the Pi
 
@@ -71,7 +71,7 @@ python3 led_control.py
 
 Python file: [adc_simpletest.py](adc_simpletest.py)
 
-This file prints voltage convert to 10-bit values from analog sensors connected to an 8-channel MCP3008 analog to digital converter.
+This file prints 10-bit values converted from analog sensor voltages. The analog sensors are connected to an 8-channel MCP3008 analog to digital converter.
 
 To run this file, type in the terminal:
 
