@@ -44,7 +44,7 @@ ifconfig
 Open the terminal on the Raspberry Pi and enter:
 
 `
-git clone https://github.com/mlmldata2017/raspi_tempProbe.git
+git clone https://github.com/mlmldata2018/raspi_tempProbe.git
 `
 
 Change into the new directory.
@@ -84,7 +84,7 @@ https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008
 
 ## Temperature probe
 
-Python files: 
+Python files:
 * [tempProbe.py](tempProbe.py) - 1-Wire temperature probe class
 * [mug_temp.py](mug_temp.py) - starter code for recording temperature of a coffee mug
 
