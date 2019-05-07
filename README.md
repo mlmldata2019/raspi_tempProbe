@@ -5,7 +5,6 @@ Classroom activities for introduction to using electronics with a Raspberry Pi.
 * [Connecting to the Pi](#connecting-to-the-pi)
 * [Cloning the GitHub repository](#cloning-the-github-repository)
 * [Blinking LED](#Blinking-LED)
-* [Reading signals from analog sensors](#reading-signals-from-analog-sensors)
 * [Temperature probe](#temperature-probe)
 
 ## Connecting to the Pi
@@ -44,7 +43,7 @@ ifconfig
 Open the terminal on the Raspberry Pi and enter:
 
 `
-git clone https://github.com/mlmldata2018/raspi_tempProbe.git
+git clone https://github.com/mlmldata2019/raspi_tempProbe.git
 `
 
 Change into the new directory.
@@ -66,21 +65,6 @@ To run this file, type in the terminal:
 `
 python led_control.py
 `
-
-## Reading signals from analog sensors
-
-Python file: [adc_simpletest.py](adc_simpletest.py)
-
-This file prints 10-bit values converted from analog sensor voltages. The analog sensors are connected to an 8-channel MCP3008 analog to digital converter.
-
-To run this file, type in the terminal:
-
-`
-python adc_simpletest.py
-`
-
-For more information:
-https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008
 
 ## Temperature probe
 

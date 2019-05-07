@@ -15,7 +15,7 @@ probe = tp.TempProbe()
 probe.get_temp()
 
 # 1.  Write a program that prints the current time and temperature together
-#     on one line 
+#     on one line
 #
 # hint: the following command will return the current time:
 #
@@ -32,8 +32,10 @@ probe.get_temp()
 # f.close()
 
 
-# 3. We will run an experiment to measure how well each mug insulates the contents
-# Set up your program to record temperature and time to at text file, so we can measure
-# the temperature of the water in the mug over the lunch break
+# 3. Test the temperature sensor - place the temperature sensor in a cup
+#    of warm water and let it adjust to its surroundings. Then place the
+#    sensor in a cup of cold water. Record the data for a minute or two.
 
-# 4. After lunch - Analyze the data
+# 4. Analyze the data to estimate how long it takes to adjust. This can be
+#    done in a Jupyter Notebook on your own computer. Compare your estimate
+#    with another group.
