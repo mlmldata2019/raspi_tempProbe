@@ -28,8 +28,10 @@ Each group will need at least one computer that can connect to the Pi over a *wi
 4. If there there is a private wireless network, open the web browser and sign into the network.
 
 * It is possible that you may need to reset the date and time (the Raspberry Pi has no internal clock). To do this open a terminal and reset the date manually, using the current date and time. For example:
-`sudo date -s "May 7 2019 13:10"`
-Note: `sudo` executes this command as a "super-user" with administrative permissions.
+
+  `sudo date -s "May 7 2019 13:10"`
+
+  Note: `sudo` executes this command as a "super-user" with administrative permissions.
 
 5. Find the IP address of the Raspberry Pi:
 
